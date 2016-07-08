@@ -29,28 +29,50 @@
 				margin: 10px 0;
 			}
 			.wrapper {				
-				width:100%;
+				width:100vw;
 				clear:both;
 			}
 			.left-panel {
 				height:400px;
-				width:70%;
+				width:70vw;
 				border: 2px solid gray;
 				float:left;				
 			}
 			.right-panel {
 				border: 2px solid gray;
 				float: left;
-				height: 400px;
-				margin: 0 0 0 16px;
-				width: 28%;
+				height: 400px;				
+				width: 28vw;
 			}
+			
 			.col-4 {
 				height:150px;
-				width:31%;
-				border: 2px solid gray;
-				margin: 10px;
-				display:inline-block;
+				width:32vw;
+				border: 1px solid gray;				
+				display:inline-block;				
+			}			
+			@media (min-width:424px) and (max-width:700px) {
+				.left-panel {					
+					width:100vw;								
+				}
+				.right-panel {
+					display:none;
+				}
+				.sm-col-6 {
+					height:150px;
+					width:49vw;
+					border: 1px solid gray;				
+					display:inline-block;				
+				}				
+			}
+			
+			@media (max-width:424) {
+				.xs-col-12 {
+					height:150px;
+					width:98vw;
+					border: 1px solid gray;				
+					display:inline-block;				
+				}
 			}
 			footer {
 				height : 40px;
@@ -80,11 +102,11 @@
 			</div>
 		</div>
 		<div class="wrapper">
-			<div class="col-4">
+			<div class="col-4 sm-col-6 xs-col-12">
 			</div>
-			<div class="col-4">
+			<div class="col-4 sm-col-6 xs-col-12">
 			</div>
-			<div class="col-4">
+			<div class="col-4 sm-col-6 xs-col-12">
 			</div>
 		</div>
 		<footer>
